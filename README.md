@@ -1,57 +1,104 @@
-# Financial Recommendation System
+# FinPilot: AI-Powered Financial Advisory Platform
 
-A recommendation system for financial transactions, offers, assets, and investment strategies.
+## Overview
+FinPilot is an intelligent financial advisory platform that leverages artificial intelligence to provide personalized investment recommendations, portfolio analytics, and data-driven insights. The system combines advanced analytics with user-friendly interfaces to help users make informed financial decisions.
 
-## Setup Instructions
+## Team
+This project was developed by:
+- **Dhruv**, **Hitesh**, and **Rounak** at LTIMindtree under the guidance of **Shuja Sir** and **Kamakshi Ma'am**.
 
+## Key Features
+
+### 1. AI-Powered Recommendations
+- Personalized investment strategies based on user preferences
+- Risk profile assessment and matching
+- Dynamic asset allocation recommendations
+- Real-time market insights and opportunities
+
+### 2. Advanced Analytics Dashboard
+- Interactive visualizations of portfolio performance
+- Historical performance tracking
+- Asset distribution analysis
+- Country-wise investment insights
+- Risk-return metrics and comparisons
+
+### 3. Data Management
+- Comprehensive financial data tracking
+- Transaction history and categorization
+- Asset portfolio management
+- Export capabilities for data analysis
+
+### 4. Smart Features
+- Natural language processing for investment queries
+- Automated portfolio optimization suggestions
+- Spending pattern analysis
+- Risk assessment and mitigation strategies
+
+## Technical Stack
+- **Frontend**: Streamlit
+- **Backend**: Python
+- **AI/ML**: Custom LLM integration
+- **Data Storage**: JSON-based data management
+- **Visualization**: Plotly, Matplotlib
+- **Authentication**: Custom user management system
+
+## Getting Started
+
+### Prerequisites
+- Python 3.8+
+- pip (Python package manager)
+
+### Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/dhruv230605/Recommendation-System-2.git
-cd Recommendation-System-2
+git clone https://github.com/dhruv230605/FinPilot.git
 ```
 
-2. Create and activate a virtual environment:
-```bash
-python -m venv .venv
-source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
-```
-
-3. Install dependencies:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Set up the data:
-   - Place your financial data JSON file in the `data` directory
-   - Update the `DATA_PATH` in `backend/embeddings.py` to point to your data file
+3. Set up environment variables.
 
-5. Generate FAISS indices:
+4. Run the application:
 ```bash
-python backend/embeddings.py
+streamlit run app.py
 ```
 
 ## Project Structure
+```
+FinPilot/
+├── app.py              # Main application file
+├── ui_helpers.py       # UI components and styling
+├── backend/           # Backend logic and services
+│   ├── analytics.py   # Analytics and visualization
+│   ├── chatbot.py     # AI chat functionality
+│   └── data_manager.py # Data handling
+├── data/              # Data storage
+└── requirements.txt   # Project dependencies
+```
 
-- `backend/`: Contains the main application code
-  - `embeddings.py`: Handles text embeddings and FAISS index generation
-  - `chatbot.py`: Chatbot implementation
-  - `data_manager.py`: Data management utilities
-  - `analytics.py`: Analytics functionality
-  - `auth.py`: Authentication system
-  - `data_generator.py`: Data generation utilities
-- `data/`: Directory for data files
-- `faiss_multi_output/`: Generated FAISS indices and metadata
 
-## Usage
+## Features in Detail
 
-After setup, you can:
-1. Run the chatbot
-2. Generate embeddings
-3. Perform searches
-4. Access analytics
+### Investment Recommendations
+- Customized investment strategies based on:
+  - Risk tolerance
+  - Investment horizon
+  - Financial goals
+  - Current portfolio composition
 
-## Requirements
+### Analytics Dashboard
+- Real-time portfolio performance tracking
+- Asset allocation visualization
+- Historical performance analysis
+- Risk assessment metrics
+- Geographic distribution insights
 
-- Python 3.11+
-- Dependencies listed in requirements.txt
-- Sufficient disk space for FAISS indices 
+### Data Management
+- Secure user data storage
+- Transaction history tracking
+- Asset portfolio management
+- Export functionality for external analysis
+
