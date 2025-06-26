@@ -1,0 +1,53 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+__pycache__
+backend/__pycache__
+
+# Distribution / packaging
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment variables
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local development settings
+*.log
+.DS_Store
+Thumbs.db
+
+# FAISS index files
+faiss_multi_output/
+
+# Project specific
+data/large_financial_data.json 
